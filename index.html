@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./main.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700;800&display=swap" rel="stylesheet">
+    <title>Year</title>
+</head>
+
+<body>
+    <div class="container">
+        <form action="" id="form">
+            <ul class="list">
+                <li class="item">
+                    <label class="labelD" for="input">DAY</label>
+                    <input id="day" placeholder="DD" type="number" autofocus>
+                    <span class="day"></span>
+                </li>
+                <li class="item">
+                    <label class="labelM" for="input">MONTH</label>
+                    <input id="mon" placeholder="MM" type="number">
+                    <span class="mon"></span>
+                </li>
+                <li class="item">
+                    <label class="labelY" for="input">YEAR</label>
+                    <input id="year" placeholder="YYYY" type="number">
+                    <span class="year"></span>
+                </li>
+            </ul>
+            <div class="midle">
+                <div class="hr"></div>
+                <button class="button"><img src="./Frame 29.svg" alt=""></button>
+            </div>
+        </form>
+        <div class="box">
+            <h1 class="h1"><span id="years" class="text">--</span> years</h1>
+            <h1 class="h1"><span id="months" class="text">--</span> months</h1>
+            <h1 class="h1"><span id="days" class="text">--</span> days</h1>
+        </div>
+    </div>
+
+    <script src="./js/app.js"></script>
+</body>
+
+</html>
