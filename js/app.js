@@ -51,15 +51,14 @@ form.addEventListener("submit", (e) => {
     const mon = monEl.value
     const year = yearEl.value
     const obj = calculateAge(`${year}-${mon}-${day}`);
-
-    if (day > 31 || mon > 12 || year > today) {
-
+     if (day > 31 || mon > 12 || year > today) {
         erFunc(day, mon, year, today)
-
     } else if (day.length && mon.length && year.length) {
         yearsEl.textContent = obj.year
         monthsEl.textContent = obj.month
         daysEl.textContent = obj.day
+    }else {
+        Space()
     }
 })
 
@@ -84,4 +83,10 @@ function ui(label, span, el, text) {
         span.textContent = ''
         el.style.border = ""
     }, 3000);
+}
+
+function Space() {
+    ui(labelD, dayS, dayEl, "Must be a valid day")
+    ui(labelM, monS, monEl, "Must be a valid month")
+    ui(labelY, yearS, yearEl, "Must be in the past")
 }
