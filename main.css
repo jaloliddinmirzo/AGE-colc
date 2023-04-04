@@ -50,9 +50,6 @@ ul {
 }
 
 body {
-    display: flex;
-    align-items: center;
-    justify-content: center;
     background-color: #F0F0F0;
     font-family: 'Poppins', sans-serif;
     font-weight: 800;
@@ -69,6 +66,7 @@ body {
     background: #fff;
     padding: 56px;
     border-radius: 24px 24px 200px 24px;
+    margin: 0 auto;
 }
 
 #form {
@@ -120,6 +118,7 @@ input::placeholder {
     justify-content: end;
     margin-bottom: 48px;
 }
+
 .hr {
     position: relative;
     width: 100%;
@@ -133,7 +132,6 @@ input::placeholder {
     display: flex;
     justify-content: center;
     align-items: center;
-    padding: 0px;
     gap: 8px;
     width: 96px;
     height: 96px;
@@ -170,10 +168,137 @@ input:focus {
     color: #854DFF;
 }
 
-.list span  {
+.list span {
     color: #FF5959;
     font-weight: 400;
     font-size: 14px;
     line-height: 21px;
     text-transform: capitalize;
+}
+
+
+@media screen and (max-width: 768px) {
+    .container {
+        padding: 35px;
+    }
+
+    #form {
+        font-size: 12px;
+        line-height: 18px;
+    }
+
+    input {
+        width: 100%;
+        padding: 8px 18px;
+        font-size: 22px;
+        line-height: 38px;
+    }
+
+    input::placeholder {
+        font-size: 22px;
+        line-height: 38px;
+    }
+
+
+    .list {
+        justify-content: center;
+        gap: 30px;
+        margin-bottom: 68px;
+    }
+
+    .item {
+        gap: 5px;
+    }
+
+    .midle {
+        margin-bottom: 58px;
+    }
+
+    .button {
+        width: 76px;
+        height: 76px;
+        margin-top: -38px;
+    }
+
+    .box {
+        gap: 0px;
+        margin-bottom: 86px;
+    }
+
+    .h1 {
+        font-size: 70px;
+        line-height: 110%;
+        letter-spacing: -0.01em;
+    }
+
+
+    .list span {
+        font-size: 10px;
+        line-height: 18px;
+    }
+
+}
+@media screen and (max-width: 490px) {
+    .container {
+        padding: 48px 24px;
+        border-radius: 24px 24px 100px 24px;
+    }
+
+    #form {
+        font-size: 12px;
+        line-height: 18px;
+    }
+
+    input {
+        /* width: 21vw; */
+        padding: 12px 16px;
+        font-size: 6vw;
+        line-height: 8vw;
+    }
+
+    input::placeholder {
+        font-size: 6vw;
+        line-height: 8vw;
+    }
+
+
+    .list {
+        gap: 16px;
+        justify-content: center;
+        margin-bottom: 48px;
+    }
+
+    .item {
+        gap: 5px;
+    }
+
+    .midle {
+        justify-content: center;
+        margin-bottom: 58px;
+    }
+
+    .button {
+        width: 76px;
+        height: 76px;
+        margin-top: -38px;
+    }
+
+    .box {
+        display: flex;
+        flex-direction: column;
+        margin-bottom: 86px;
+    }
+
+    .h1 {
+        font-size: 56px;
+        line-height: 110%;
+        letter-spacing: -0.02em;
+    }
+
+
+    .list span {
+        font-size: 10px;
+        line-height: 18px;
+    }
+
 }
